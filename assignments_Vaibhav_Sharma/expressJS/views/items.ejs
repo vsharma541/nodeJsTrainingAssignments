@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h2>Items list</h2>
+        <ul>
+            <% for(let item of data) { %>
+                <li>
+                    <p>Item name: <%= item.name %></p>
+                </li>
+            <% } %>
+        </ul>
+        <h2>Add item</h2>
+        <form method="post" action="/items">
+            <label for="itemName">Item name</label>
+            <input name="itemName" type="text">
+            <br><br>
+            <label for="itemPrice">Item price</label>
+            <input name="itemPrice" type="text">
+            <br><br>
+            <button type="submit">Save</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<head>
+    <meta charset=utf-8 />
+    <title>Create a table</title>
+    <style type="text/css">
+        body {
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="rows-count">No.of rows</label>
+        <input type="text" id="rows-count">
+        <br><br>
+        <label for="cold-count">No.of columns</label>
+        <input type="text" id="cols-count">
+        <br><br>
+        <input type="button" onclick="createTable()" value="Create the table">
+    </form>
+    <div>
+        <p id="table-title"></p>
+        <table id="myTable" border="1">
+        </table>
+    </div>
+    <script src="q16.js"></script>
+</body>

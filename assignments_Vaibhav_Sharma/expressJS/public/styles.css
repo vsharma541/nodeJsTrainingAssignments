@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+}
+p {
+    text-align: center;
+    color: whitesmoke;
+}
+img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+}
+a {
+    background-color: white;
+}

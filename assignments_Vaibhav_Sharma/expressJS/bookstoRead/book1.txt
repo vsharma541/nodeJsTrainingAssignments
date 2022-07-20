@@ -1,0 +1,5 @@
+{
+    "name": "Vaibhav",
+    "age": 20,
+    "dept": "IT"
+}

@@ -1,0 +1,11 @@
+var adder = require('./operations/sum');
+var productor = require('./operations/multiplication');
+var subter = require('./operations/subtraction');
+var divider = require('./operations/division');
+var args = process.argv;
+var num1 = Number(args[2]);
+var num2 = Number(args[3]);
+console.log(`Sum of numbers ${num1} and ${num2} = `, adder(num1, num2));
+console.log(`Product of numbers ${num1} and ${num2} = `, productor(num1, num2));
+console.log(`Subtraction of numbers ${num1} and ${num2} = `, subter(num1, num2));
+console.log(`Division of numbers ${num1} and ${num2} = `, divider(num1, num2));

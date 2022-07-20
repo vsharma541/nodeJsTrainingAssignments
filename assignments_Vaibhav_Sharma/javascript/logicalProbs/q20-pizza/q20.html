@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Pizza House!</title>
+        <style>
+            table {
+                border: 1px solid;
+            }
+            td {
+                border: 1px solid;
+            }
+            #error-msg {
+                color: red;
+            }
+        </style>
+        <script src="q20.js"></script>
+    </head>
+    <body>
+        <h2>Welcome to the Pizza House!</h2>
+        <div>
+            <form id="pizza-form">
+                <label for="cust-name">Name:</label>
+                <input type="text" id="cust-name" name="cust-name">
+                <br><br>
+                <label for="cust-email">Email:</label>
+                <input type="email" id="cust-email" name="cust-email">
+                <br><br>
+
+                <p>Toppings:</p>
+                <label for="cheese">Extra cheese</label>
+                <input type="checkbox" name="topping" id="cheese" value="1">
+                <label for="pepper">Pepperoni</label>
+                <input type="checkbox" name="topping" id="pepper" value="2">
+                <label for="olives">Olives</label>
+                <input type="checkbox" name="topping" id="olives" value="3">
+                <label for="toms">Tomatoes</label>
+                <input type="checkbox" name="topping" id="toms" value="4">
+                <label for="bacon">Bacon</label>
+                <input type="checkbox" name="topping" id="bacon" value="5">
+                <label for="mushs">Mushrooms</label>
+                <input type="checkbox" name="topping" id="mushs" value="6">
+                <br><br>
+
+                <div class="divs-inl">How do you want to get your pizza delivered: </div>
+                <label for="deliver">Delivery</label>
+                <input type="radio" name="deliver-opt" id="deliver" value="1">
+                <label for="pickup">Pickup</label>
+                <input type="radio" name="deliver-opt" id="pickup" value="2">
+                <br><br>
+
+                <div class="divs-inl">Tip?</div>
+                <select name="tip">
+                    <option value="15">15%</option>
+                    <option value="20">20%</option>
+                    <option value="25">25%</option>
+                </select>
+                <br><br>
+
+                <div class="divs-bl">Address:</div>
+                <textarea name="address"></textarea>
+                <br><br>
+
+                <span id="error-msg"></span><br>
+
+                <button type="submit">Submit</button>
+                <input type="reset" value="Reset">
+                <button type="button" id="summary">Show Summary</button>
+                <br><br>
+
+                <div>
+                    <table id="summary-table"></table>
+                </div>
+                
+            </form>
+        </div>
+        
+    </body>
+</html>
