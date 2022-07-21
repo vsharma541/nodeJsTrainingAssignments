@@ -1,0 +1,69 @@
+{
+    "services": {
+        "regApi": {
+            "index": 2,
+            "LoadBalancerStrategy": "ROUND_ROBIN",
+            "instances": [
+                {
+                    "host": "localhost",
+                    "protocol": "http",
+                    "apiName": "regApi",
+                    "port": 3001,
+                    "url": "http://localhost:3001/",
+                    "enabled": true
+                },
+                {
+                    "host": "localhost",
+                    "protocol": "http",
+                    "apiName": "regApi",
+                    "port": 3002,
+                    "url": "http://localhost:3002/"
+                },
+                {
+                    "host": "localhost",
+                    "protocol": "http",
+                    "apiName": "regApi",
+                    "port": 3003,
+                    "url": "http://localhost:3003/",
+                    "enabled": true
+                },
+                {
+                    "host": "localhost",
+                    "protocol": "http",
+                    "apiName": "regApi",
+                    "port": 3004,
+                    "url": "http://localhost:3004/"
+                }
+            ]
+        },
+        "testApi": {
+            "index": 0,
+            "LoadBalancerStrategy": "ROUND_ROBIN",
+            "instances": [
+                {
+                    "host": "localhost",
+                    "protocol": "http",
+                    "apiName": "testApi",
+                    "port": 3001,
+                    "url": "http://localhost:3001/",
+                    "enabled": true
+                },
+                {
+                    "host": "localhost",
+                    "protocol": "http",
+                    "apiName": "testApi",
+                    "port": 3002,
+                    "url": "http://localhost:3002/"
+                }
+            ]
+        }
+    },
+    "auth": {
+        "users": {
+            "john": {
+                "username": "john",
+                "password": "$2b$10$CjwDvU1O8uf8Lufb8XFEeeblwK7W95PtWoeEct/71LT7F6yaXSBH2"
+            }
+        }
+    }
+}
