@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "67fc7c57-4769-4eb4-9fef-e8ff9bac1939",
+		"name": "lambda-microservice-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13945181"
+	},
+	"item": [
+		{
+			"name": "DeleteFromTable",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://kpdhqkpfne.execute-api.us-east-1.amazonaws.com/default/lambda-microservice?TableName=MyTable&id=11",
+					"protocol": "https",
+					"host": [
+						"kpdhqkpfne",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"default",
+						"lambda-microservice"
+					],
+					"query": [
+						{
+							"key": "TableName",
+							"value": "MyTable"
+						},
+						{
+							"key": "id",
+							"value": "11"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ScanTable",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://kpdhqkpfne.execute-api.us-east-1.amazonaws.com/default/lambda-microservice?TableName=MyTable",
+					"protocol": "https",
+					"host": [
+						"kpdhqkpfne",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"default",
+						"lambda-microservice"
+					],
+					"query": [
+						{
+							"key": "TableName",
+							"value": "MyTable"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddToTable",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"TableName\":\"MyTable\",\"content\":{\"id\":\"10\",\"firstName\":\"Adam\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://kpdhqkpfne.execute-api.us-east-1.amazonaws.com/default/lambda-microservice",
+					"protocol": "https",
+					"host": [
+						"kpdhqkpfne",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"default",
+						"lambda-microservice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModifyTable",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"TableName\":\"MyTable\",\"content\":{\"id\":\"11\",\"firstName\":\"Sato\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://kpdhqkpfne.execute-api.us-east-1.amazonaws.com/default/lambda-microservice",
+					"protocol": "https",
+					"host": [
+						"kpdhqkpfne",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"default",
+						"lambda-microservice"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
